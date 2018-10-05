@@ -4,6 +4,8 @@ angular.module('video-player').component('app', {
   // selectVideo: function () {
 
   // }
-  controller: 'appCtrl'
+  controller: function(){
+    
+  }
 
 });

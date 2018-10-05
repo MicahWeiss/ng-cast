@@ -1,5 +1,7 @@
-angular.module('video-player')
+angular.module('video-player').component('videoList', {
+  templateUrl: 'src/templates/videoList.html',
+  controller: function() {
+    this.videos = exampleVideoData;
+  },
 
-.component('videoList', {
-  templateUrl: 'src/templates/videoList.html'
 });
