@@ -1,11 +1,12 @@
-angular.module('video-player').component('app', {
-  // TODO
+angular.module('video-player')
+
+.component('app', {
   templateUrl: 'src/templates/app.html',
-  // selectVideo: function () {
+  controller: 'appCtrl'
+})
 
-  // }
-  controller: function(){
-    
-  }
-
+.controller( 'appCtrl', function(){
+  this.currentVideo = exampleVideoData[0];
+  this.videos= exampleVideoData;
+  this.onClick = (newVideo) => {this.currentVideo = newVideo};  // arrow functions keep context
 });

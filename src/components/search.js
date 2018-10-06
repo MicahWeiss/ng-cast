@@ -1,6 +1,6 @@
 angular.module('video-player')
 
-.component('search', {
-  // TODO
-  templateUrl: 'src/templates/search.html'
-});
+.component('search', { //Dependency injection []
+  templateUrl: 'src/templates/search.html',
+  controller: 'appCtrl'
+})
